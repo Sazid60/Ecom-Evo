@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "url": "/assets/images/slider-imgs/slide-1.jpg",
+    "title": "Shoes"
+  },
+  {
+    "id": 2,
+    "url": "/assets/images/slider-imgs/slide-2.jpg",
+    "title": "Chador"
+  },
+  {
+    "id": 3,
+    "url": "/assets/images/slider-imgs/slide-3.jpg",
+    "title": "Sweater"
+  },
+  {
+    "id": 4,
+    "url": "/assets/images/slider-imgs/slide-4.jpg",
+    "title": "Hijab"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Men",
+    "imageUrl": "/assets/images/category/men-category.jpg",
+    "link": "/men"
+  },
+  {
+    "name": "Women",
+    "imageUrl": "/assets/images/category/women-category.jpg",
+    "link": "/women"
+  },
+  {
+    "name": "Accessories",
+    "imageUrl": "/assets/images/category/accesories-category.jpg",
+    "link": "/accessories"
+  }
+]
