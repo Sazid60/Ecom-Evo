@@ -173,7 +173,7 @@ const ProductCard = ({ product }) => {
                     onClick={handleCloseModal}
                 >
                     <div
-                        className="bg-white  p-6 w-[50%] relative shadow-lg"
+                        className="bg-white  p-6 w-[60%] relative shadow-lg"
                         onClick={(e) => e.stopPropagation()} // Prevent click events from propagating to the overlay
                     >
                         <button

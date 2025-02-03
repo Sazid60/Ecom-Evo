@@ -25,7 +25,7 @@ const ProductImageSlider = ({ images }) => {
                 navigation={true}
                 thumbs={{ swiper: thumbsSwiper }}
                 modules={[FreeMode, Navigation, Thumbs]}
-                className="mySwiper2 h-[400px] sm:h-[600px] md:h-[800px] lg:h-[550px]"
+                className="mySwiper2 h-[400px] sm:h-[600px] md:h-[800px] lg:h-[500px] 2xl:h-[500px]"
             >
                 {images.map((image, index) => (
                     <SwiperSlide key={index}>
@@ -52,7 +52,7 @@ const ProductImageSlider = ({ images }) => {
                         <img
                             src={image}
                             alt={`Thumbnail ${index + 1}`}
-                            className='object-cover h-[60px] sm:h-[120px] md:h-[100px] w-full'
+                            className='object-cover h-[60px] sm:h-[120px] md:h-[80px] w-full'
                         />
                     </SwiperSlide>
                 ))}
