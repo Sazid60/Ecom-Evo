@@ -43,7 +43,7 @@ const FilterSection = () => {
                             <input
                                 type="checkbox"
                                 value={color}
-                                className="form-checkbox text-black border-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-black"
+                                className="form-checkbox "
                             />
                             {color}
                         </label>
@@ -60,7 +60,7 @@ const FilterSection = () => {
                             <input
                                 type="checkbox"
                                 value={subcategory}
-                                className="form-checkbox text-black border-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-black"
+                                className="form-checkbox text-black "
                             />
                             {subcategory}
                         </label>
@@ -77,7 +77,7 @@ const FilterSection = () => {
                             <input
                                 type="checkbox"
                                 value={size}
-                                className="form-checkbox text-black border-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-black"
+                                className="form-checkbox text-black "
                             />
                             {size}
                         </label>

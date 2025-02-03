@@ -1,0 +1,53 @@
+{
+  "paymentMethods": [
+    { "name": "Visa", "image": "/assets/images/payment-system/visa-card.png" },
+    {
+      "name": "MasterCard",
+      "image": "/assets/images/payment-system/master-card.png"
+    },
+    {
+      "name": "Bkash",
+      "image": "/assets/images/payment-system/bkash-card.png"
+    },
+    {
+      "name": "Nagad",
+      "image": "/assets/images/payment-system/nagad-card.png"
+    },
+    {
+      "name": "Islami Bank",
+      "image": "/assets/images/payment-system/islami-card.png"
+    },
+    {
+      "name": "Rocket",
+      "image": "/assets/images/payment-system/rocket-card.png"
+    },
+    { "name": "Brac", "image": "/assets/images/payment-system/brack-card.png" }
+  ],
+  "sections": {
+    "helpInformation": [
+      { "name": "FAQ", "link": "/faq" },
+      { "name": "Delivery and Shipping", "link": "/delivery-and-shipping" },
+      { "name": "Returns and Exchanges", "link": "/returns-and-exchanges" },
+      { "name": "Cancellation", "link": "/cancellation" },
+      { "name": "Privacy Policy", "link": "/privacy-policy" },
+      { "name": "Terms & Conditions", "link": "/terms-and-conditions" }
+    ],
+    "areas": [
+      { "name": "Home", "link": "/" },
+      { "name": "Men's Wear", "link": "/men" },
+      { "name": "Women's Wear", "link": "/women" },
+      { "name": "New Arrivals", "link": "/new-arrivals" }
+    ],
+    "account": [
+      { "name": "My Account", "link": "/my-account" },
+      { "name": "Orders", "link": "/orders" }
+    ]
+  },
+  "newsletter": {
+    "title": "Sign Up",
+    "description": "Sign up for our newsletter to stay informed about new products and gain insights into our design process."
+  },
+  "bottom": {
+    "copyright": "Copyright © 2025 by Shoporia. A modern fashion brand based in Dhaka Bangladesh."
+  }
+}

@@ -16,14 +16,14 @@ const fetchProducts = async () => {
 
 
 
-const Accessories = () => {
-    const { data: allProducts, isLoading } = useQuery({ queryKey: ['accessoriesCategory'], queryFn: fetchProducts });
+const NewArrivalsPage = () => {
+    const { data: allProducts, isLoading } = useQuery({ queryKey: ['newArrivalsCategory'], queryFn: fetchProducts });
     const [currentPage, setCurrentPage] = useState(1);
-    const [isSidebarOpen, setIsSidebarOpen] = useState(false); // State to manage sidebar visibility
-    const productsPerPage = 10;
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+    const productsPerPage = 20;
 
     const menProducts = Array.isArray(allProducts)
-        ? allProducts.filter(product => product?.category === 'Accessories')
+        ? allProducts.filter(product => product?.type === 'new-arrival')
         : [];
 
     const indexOfLastProduct = currentPage * productsPerPage;
@@ -37,7 +37,7 @@ const Accessories = () => {
 
     return (
         <>
-            <SecondaryTitle title={"Accessories"} titleDesc={"Explore the vast Accessories collection  here"} />
+            <SecondaryTitle title={"New Arrivals"} titleDesc={"Explore the vast New Arrivals collection  here"} />
             <MainContainer>
                 <div className="flex flex-col xl:flex-row justify-between xl:gap-10">
                     {/* Sidebar for large screens */}
@@ -98,4 +98,4 @@ const Accessories = () => {
     );
 };
 
-export default Accessories;
+export default NewArrivalsPage;

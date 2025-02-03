@@ -8,6 +8,7 @@ import DetailedProductInfo from "../../components/shared/ProductDetailsCard/Deta
 import RelatedProducts from "../../components/shared/ProductDetailsCard/RelatedProducts";
 import ProductDetailsCardSkeleton from "../../components/shared/ProductDetailsCard/ProductDetailsCardSkeleton";
 import DetailedProductInfoSkeleton from "../../components/shared/ProductDetailsCard/DetailedProductInfoSkeleton";
+import { useEffect } from "react";
 
 const fetchProductData = async (productId) => {
     const response = await axios.get('/json/products.json');
@@ -16,6 +17,11 @@ const fetchProductData = async (productId) => {
 
 const ProductDetails = () => {
     const { productId } = useParams();  // Get productId from URL params
+
+    useEffect(() => {
+        // Scroll to the top when the productId changes
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }, [productId]);
 
     // Fetch product details using Tanstack Query
     const { data: productData, isLoading } = useQuery({

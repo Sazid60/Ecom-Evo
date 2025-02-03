@@ -1,26 +1,27 @@
 /* eslint-disable react/prop-types */
 import { useQuery } from "@tanstack/react-query";
-import Axios from "axios"; // You should import Axios correctly (without curly braces)
+import Axios from "axios"; // Correctly import Axios
 import MainContainer from "../../../layouts/container/MainContainer";
 import Title from "../Title/Title";
 import ProductCard from "../Product-Card/ProductCard";
 import ProductCardSkeleton from "../Product-Card/ProductCardSkeleton";
-
 
 const fetchProducts = async () => {
     const response = await Axios.get('/json/products.json');
     return response.data;
 };
 
-const RelatedProducts = ({ productCategory, }) => {
+const RelatedProducts = ({ productCategory, productId }) => {
     const { data: allProducts, isLoading } = useQuery({
         queryKey: ['related-products'],
         queryFn: fetchProducts,
     });
 
-    // Check if related Products is an array, then filter for related category
+    // Check if related products is an array, then filter for related category and exclude the current productId
     const relatedProducts = Array.isArray(allProducts)
-        ? allProducts.filter(product => product?.category === productCategory) // Correct comparison
+        ? allProducts.filter(
+            product => product?.category === productCategory && product?.productId !== productId // Skip same productId
+        )
         : [];
 
     // Limit the displayed products to 12

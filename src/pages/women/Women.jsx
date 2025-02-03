@@ -68,7 +68,7 @@ const Women = () => {
                     <button
                         onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
                         disabled={currentPage === 1}
-                        className={`px-4 py-2 rounded-md transition-all duration-300 ${currentPage === 1 ? 'bg-gray-500 text-white cursor-not-allowed' : 'bg-black text-white hover:bg-gray-700'}`}
+                        className={`px-4 py-2  transition-all duration-300 ${currentPage === 1 ? 'bg-gray-500 text-white cursor-not-allowed' : 'bg-black text-white hover:bg-gray-700'}`}
                     >
                         Previous
                     </button>
@@ -77,7 +77,7 @@ const Women = () => {
                         <button
                             key={index + 1}
                             onClick={() => handlePageChange(index + 1)}
-                            className={`px-4 py-2 border rounded-md transition-all duration-300 ${currentPage === index + 1
+                            className={`px-4 py-2 border  transition-all duration-300 ${currentPage === index + 1
                                 ? 'bg-black text-white border-black'
                                 : 'bg-white text-black border-gray-300 hover:bg-gray-100'}`}
                         >
@@ -88,7 +88,7 @@ const Women = () => {
                     <button
                         onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
                         disabled={currentPage === totalPages}
-                        className={`px-4 py-2 rounded-md transition-all duration-300 ${currentPage === totalPages ? 'bg-gray-500 text-white cursor-not-allowed' : 'bg-black text-white hover:bg-gray-700'}`}
+                        className={`px-4 py-2  transition-all duration-300 ${currentPage === totalPages ? 'bg-gray-500 text-white cursor-not-allowed' : 'bg-black text-white hover:bg-gray-700'}`}
                     >
                         Next
                     </button>

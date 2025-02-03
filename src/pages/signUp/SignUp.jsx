@@ -51,11 +51,11 @@ const SignUp = () => {
     }
 
     return (
-        <div className='flex justify-center items-center min-h-screen'>
-            <div className='flex flex-col max-w-md p-6 rounded-md sm:p-10 bg-gray-100 text-gray-900'>
+        <div className="flex justify-center items-center min-h-screen bg-[url('/assets/images/login-register/register.jpg')] bg-cover bg-center">
+            <div className='flex flex-col max-w-md p-6  sm:p-10 bg-transparent backdrop-blur-3xl text-white border '>
                 <div className='mb-8 text-center'>
                     <h1 className='my-3 text-4xl font-bold'>Sign Up</h1>
-                    <p className='text-sm text-gray-400'>Welcome to StayVista</p>
+                    <p className='text-sm text-gray-400'>Welcome !</p>
                 </div>
                 <form
                     noValidate=''
@@ -73,7 +73,7 @@ const SignUp = () => {
                                 name='name'
                                 id='name'
                                 placeholder='Enter Your Name Here'
-                                className='w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-rose-500 bg-gray-200 text-gray-900'
+                                className='w-full px-3 py-2 border  border-gray-300 focus:outline-primary bg-gray-200 text-gray-900'
                                 data-temp-mail-org='0'
                             />
                         </div>
@@ -99,7 +99,7 @@ const SignUp = () => {
                                 id='email'
                                 required
                                 placeholder='Enter Your Email Here'
-                                className='w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-rose-500 bg-gray-200 text-gray-900'
+                                className='w-full px-3 py-2 border border-gray-300 focus:outline-primary bg-gray-200 text-gray-900'
                                 data-temp-mail-org='0'
                             />
                         </div>
@@ -116,7 +116,7 @@ const SignUp = () => {
                                 id='password'
                                 required
                                 placeholder='*******'
-                                className='w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-rose-500 bg-gray-200 text-gray-900'
+                                className='w-full px-3 py-2 border  border-gray-300 focus:outline-primary bg-gray-200 text-gray-900'
                             />
                         </div>
                     </div>
@@ -124,7 +124,7 @@ const SignUp = () => {
                     <div>
                         <button
                             type='submit'
-                            className='bg-rose-500 w-full rounded-md py-3 text-white'
+                            className='bg-primary w-full  py-3 text-white border hover:font-bold transition-all duration-300'
                         >
                             {loading ? <TbFidgetSpinner className='animate-spin mx-auto' /> : 'Continue'}
                         </button>
@@ -137,16 +137,16 @@ const SignUp = () => {
                     </p>
                     <div className='flex-1 h-px sm:w-16 dark:bg-gray-700'></div>
                 </div>
-                <button disabled={loading} onClick={handleGoogleSignIn} className='flex justify-center items-center space-x-2 border m-3 p-2 border-gray-300 border-rounded disabled:cursor-not-allowed cursor-pointer'>
+                <button disabled={loading} onClick={handleGoogleSignIn} className='flex group justify-center items-center space-x-2 border m-3 p-2 border-gray-300 border-rounded disabled:cursor-not-allowed cursor-pointer'>
                     <FcGoogle size={32} />
 
-                    <p>Continue with Google</p>
+                    <p className="hover:font-bold transition-all duration-300">Continue with Google</p>
                 </button>
                 <p className='px-6 text-sm text-center text-gray-400'>
                     Already have an account?{' '}
                     <Link
                         to='/login'
-                        className='hover:underline hover:text-rose-500 text-gray-600'
+                        className='hover:underline hover:font-bold text-gray-600'
                     >
                         Login
                     </Link>

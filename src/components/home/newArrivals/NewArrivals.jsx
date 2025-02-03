@@ -4,6 +4,7 @@ import MainContainer from "../../../layouts/container/MainContainer";
 import ProductCard from "../../shared/Product-Card/ProductCard";
 import Title from "../../shared/Title/Title";
 import ProductCardSkeleton from '../../shared/Product-Card/ProductCardSkeleton';
+import MediumButton from '../../shared/Button/MediumButton';
 
 // Fetch function for products
 const fetchProducts = async () => {
@@ -41,6 +42,10 @@ const NewArrivals = () => {
                         : limitedProducts.map(product => (
                             <ProductCard key={product.productId} product={product} />
                         ))}
+                </div>
+                <div className="mt-8 flex justify-center items-center">
+                    <MediumButton buttonText={"View All New Arrivals"} buttonLink={"/new-arrivals"} />
+
                 </div>
             </MainContainer>
         </>
