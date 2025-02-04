@@ -51,7 +51,7 @@ const NavBar = () => {
                 <div>
                     <NavtopMarquee />
                 </div>
-                <div className="container mx-auto xl:max-w-6xl 2xl:max-w-[1600px] flex justify-between items-center py-2">
+                <div className="mx-auto px-4 sm:max-w-full md:max-w-6xl lg:max-w-7xl xl:max-w-[1400px] 2xl:max-w-[1500px] flex justify-between items-center py-2">
                     {/* Logo and Nav Items */}
                     <div className="flex items-center md:gap-20">
                         <img className="h-12 w-12 rounded-full" src="/binary-bhai.png" alt="logo" />
